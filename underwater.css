@@ -1,0 +1,171 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  width: 100%;
+  font-family: sans-serif;
+}
+
+#myVideo {
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+.content{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+.a-home{
+    text-align: end;
+    width: 70%;
+    margin-top: 40px ;
+    color: white;
+    font-weight: bold;
+}
+.under-construction{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 70%;
+    height: 80%;
+    color: white;
+    gap: 50PX;
+}
+.h1-under-construction{
+    text-align: center;
+    font-weight: 500;
+    font-size: 60px;
+}
+.site-nearle-ready{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ gap: 10px;
+}
+.process-bar{
+    width: 350px;
+    color: #000 ;
+    background-color: #f1f1f1 ;
+    box-shadow: 2px 2px 20px rgb(0, 0, 0);
+}
+.process-green{
+    color: #fff ;
+    background-color: #3372ad ;
+}
+.percent{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.content-socail{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.socail-app{
+    display: flex;
+    gap: 10px;
+}
+svg{
+    width: 30px;
+}
+.app{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border: 3px solid white;
+    border-radius: 100%;
+}
+/* .btn-notifyme{
+    background-color: #99c2e9;
+    box-shadow: 2px 2px 10px black;
+    font-size: 16px;
+    padding-inline: 25px;
+    padding-block: 7px;
+}
+.btn-notifyme:hover{
+    color: white;
+    background-color: #6daeeb;
+} */
+
+button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 30px;
+    border: 0;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+    transition: all 0.02s;
+    font-weight: bold;
+    color: rgb(37, 37, 37);
+    z-index: 0;
+    box-shadow: 0 0px 7px -5px rgba(0, 0, 0, 0.5);
+  }
+  
+  .button:hover {
+    background: rgb(193, 228, 248);
+    color: rgb(33, 0, 85);
+  }
+  
+  .button:active {
+    transform: scale(0.97);
+  }
+  
+  .hoverEffect {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+  }
+  
+  .hoverEffect div {
+    background: rgb(104, 0, 222);
+    background: linear-gradient(90deg, rgb(0, 140, 255) 0%, rgb(0, 89, 255) 49%, rgb(0, 132, 255) 100%);
+    border-radius: 40rem;
+    width: 10rem;
+    height: 10rem;
+    transition: 0.4s;
+    filter: blur(20px);
+    animation: effect infinite 3s linear;
+    opacity: 0.5;
+  }
+  
+  .button:hover .hoverEffect div {
+    width: 8rem;
+    height: 8rem;
+  }
+  
+  @keyframes effect {
+  
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+    }
+  }
